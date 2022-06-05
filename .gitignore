@@ -1,0 +1,6 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+main.py
+/cifar10/CORRECT
+TFModelOld
