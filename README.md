@@ -20,7 +20,8 @@ As can be seen in the figure below, the feature model performs worst on the MNis
 <br>
 <img src="figures/MNistResults.png" width="600" alt="results mnist"/> <br>
 **NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br>
-| Network           | 1 epoch    | 2 epochs | 5 epochs | 10 epochs |
+The accuracies of the variants on the mnist test set: <br>
+| Network variant  | 1 epoch    | 2 epochs | 5 epochs | 10 epochs |
 | :--------------- | ---------: | ----------: | ----------: | ----------: |
 | Shallow features | 0.3495     | 0.4544 | 0.5612 | 0.6068 |
 | Simple features  | 0.5560 | 0.5916 | 0.6895 | 0.7161 |
@@ -52,7 +53,8 @@ Overall, the best performing variant is the Simple CNN with 32 channels and drop
 
 <img src="figures/Cifar10Results2.png" width="600" alt="results mnist"/> <br>
 **NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br>
-| Method           | 1 epoch    | 5 epochs    | 10 epochs   | 15 epochs   | 25 epochs   | 35 epochs  | 50 epochs  |
+The accuracies of the variants on the Cifar10 test set: <br>
+| Network variant  | 1 epoch    | 5 epochs    | 10 epochs   | 15 epochs   | 25 epochs   | 35 epochs  | 50 epochs  |
 | :--------------- | ---------: | ----------: | ----------: | ----------: | ----------: |----------: |----------: |
 | Shallow fully connected               | 0.3399 | 0.3674 | 0.3296 | ***0.3859*** | 0.3628 | 0.3262 | 0.3820 |
 | Fully connected                       | 0.3655 | 0.4279 | 0.4443 | ***0.4547*** | 0.4374 | 0.4381 | 0.4515 |
