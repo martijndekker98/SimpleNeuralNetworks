@@ -40,6 +40,9 @@ There are two FCNN variants, one shallow (only input and output layer) and one w
 
 ### Convolutional neural network
 There are six variants, three simple variants and three CNNs with double convolutions. These double convolution variants have two convolutional layers in sequence, while the simple variant has a pooling layer after each convolutional layer. Two variants start of with 16 channels, while the other four start with 32 and two of those also use dropout, with a value of 0.2, to improve the performance.
+<img src="SimpleCNN.png" width="800" alt="Simple CNN architecture"/><br>
+The figure above shows the architecture of the simple CNN model (16 channels variant) where the first square is the input image, and the stacks of squares after it are the results of convolutional/pooling layers. The network consists of three sets of convolutional layer and a max-pooling layer with a the output layer ("1x10") at the end. For the two variants with 32 channels, the number of channels would be 32, 64 and 128 for the three sets <br>
+<img src="CNNDoubleV2.png" width="800" alt="Simple CNN architecture"/><br>
 
 ## Results
 NOTE: normally this type of analysis, or at least the largest part, is done using the validation set instead of the test set. 
