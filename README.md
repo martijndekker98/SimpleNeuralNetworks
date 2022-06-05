@@ -19,7 +19,7 @@ NOTE: the second variant "Double Ch." has the same network architecture but doub
 As can be seen in the figure below, the feature model performs worst on the MNist dataset, but the two variants have the fewest number of parameters. This can be a good thing as succesfully training a model with a lot of parameters requires a lot of training data. For the MNist dataset this is not really a problem. But while the feature model has very few parameters, the two variants benefit most from multiple epochs, while the FCNN and CNN variants already have a high accuracy after one epoch and only marginally increase their performance with additional epochs of training. For a straightforward task such as classifying the handwritten digits, a hidden layer does not have a huge impact on the performance of the FCNN model (a 0.05 difference in performance). Overall the CNN performs the best while they have less parameters than the FCNN variants.
 <br>
 <img src="figures/MNistResults.png" width="600" alt="results mnist"/> <br>
-NOTE: the number behind the name of the model variant indicates the number of trainable parameters. <br>
+**NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br>
 | Network           | 1 epoch    | 2 epochs | 5 epochs | 10 epochs |
 | :--------------- | ---------: | ----------: | ----------: | ----------: |
 | Shallow features | 0.3495     | 0.4544 | 0.5612 | 0.6068 |
@@ -46,12 +46,12 @@ The figure above shows the architecture of the simple CNN model (16 channels var
 For the CNN variants with double convolutions the network consists of two sets with two consecutive convolutional layers followed by a max pooling layer.<br>
 
 ## Results
-NOTE: normally this type of analysis, or at least the largest part, is done using the validation set instead of the test set. 
+**NOTE: normally this type of analysis, or at least the largest part, is done using the validation set instead of the test set.** <br>
 The first difference between performance on the mnist and cifar10 datasets is that for the cifar10 dataset, all variants benefit (significantly) from more epochs. The FCNN variants do not improve after 15 epochs and only achieve accuracies of approximately 39% and 45%. This is not terrible (randomly guessing a label will give an accuracy of 10%) but the accuracy can be improved significantly by using a CNN instead, while this would also reduce the number of parameters. For the simple CNNs the accuracy does not improve more than a percentage point or two after 15 epochs as well and with accuracies of 71%, 73% and 77% they outperform the FCNNs by a large margin. The CNN variants with double convolutions perform better than the simple variants but this comes with a severe increase in number of parameters, which makes them harder to train and slower to predict. <br>
 Overall, the best performing variant is the Simple CNN with 32 channels and dropout with an accuracy of 77% after 35 epochs. If we were to limit the number of epochs to a more reasonable number such as 15, the CNN with double convolutions, 32 channels and dropout performs better with 76% versus 75% for the simple dropout version.
 
 <img src="figures/Cifar10Results2.png" width="600" alt="results mnist"/> <br>
-NOTE: the number behind the name of the model variant indicates the number of trainable parameters. <br>
+**NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br>
 | Method           | 1 epoch    | 5 epochs    | 10 epochs   | 15 epochs   | 25 epochs   | 35 epochs  | 50 epochs  |
 | :--------------- | ---------: | ----------: | ----------: | ----------: | ----------: |----------: |----------: |
 | Shallow fully connected               | 0.3399 | 0.3674 | 0.3296 | **0.3859** | 0.3628 | 0.3262 | 0.3820 |
