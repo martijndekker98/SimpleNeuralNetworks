@@ -19,7 +19,7 @@ NOTE: the second variant "Double Ch." has the same network architecture but doub
 As can be seen in the figure below, the feature model performs worst on the MNist dataset, but the two variants have the fewest number of parameters. This can be a good thing as succesfully training a model with a lot of parameters requires a lot of training data. For the MNist dataset this is not really a problem. But while the feature model has very few parameters, the two variants benefit most from multiple epochs, while the FCNN and CNN variants already have a high accuracy after one epoch and only marginally increase their performance with additional epochs of training. For a straightforward task such as classifying the handwritten digits, a hidden layer does not have a huge impact on the performance of the FCNN model (a 0.05 difference in performance). Overall the CNN performs the best while they have less parameters than the FCNN variants.
 <br>
 <img src="figures/MNistResults.png" width="600" alt="results mnist"/> <br>
-**NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br>
+**NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br><br>
 The accuracies of the variants on the mnist test set: <br>
 | Network variant  | 1 epoch    | 2 epochs | 5 epochs | 10 epochs |
 | :--------------- | ---------: | ----------: | ----------: | ----------: |
@@ -52,7 +52,7 @@ The first difference between performance on the mnist and cifar10 datasets is th
 Overall, the best performing variant is the Simple CNN with 32 channels and dropout with an accuracy of 77% after 35 epochs. If we were to limit the number of epochs to a more reasonable number such as 15, the CNN with double convolutions, 32 channels and dropout performs better with 76% versus 75% for the simple dropout version.
 
 <img src="figures/Cifar10Results2.png" width="600" alt="results mnist"/> <br>
-**NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br>
+**NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br><br>
 The accuracies of the variants on the Cifar10 test set: <br>
 | Network variant  | 1 epoch    | 5 epochs    | 10 epochs   | 15 epochs   | 25 epochs   | 35 epochs  | 50 epochs  |
 | :--------------- | ---------: | ----------: | ----------: | ----------: | ----------: |----------: |----------: |
