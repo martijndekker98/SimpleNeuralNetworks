@@ -54,14 +54,14 @@ Overall, the best performing variant is the Simple CNN with 32 channels and drop
 **NOTE: the number behind the name of the model variant indicates the number of trainable parameters.** <br>
 | Method           | 1 epoch    | 5 epochs    | 10 epochs   | 15 epochs   | 25 epochs   | 35 epochs  | 50 epochs  |
 | :--------------- | ---------: | ----------: | ----------: | ----------: | ----------: |----------: |----------: |
-| Shallow fully connected               | 0.3399 | 0.3674 | 0.3296 | **0.3859** | 0.3628 | 0.3262 | 0.3820 |
-| Fully connected                       | 0.3655 | 0.4279 | 0.4443 | **0.4547** | 0.4374 | 0.4381 | 0.4515 |
-| Simple CNN 16 channels                | 0.5146 | 0.6468 | 0.6909 | 0.7009 | 0.7082 | **0.7170** | 0.7014 |
-| Simple CNN 32 channels                | 0.5937 | 0.6936 | 0.7199 | **0.7304** | 0.7102 | 0.7057 | 0.7042 |
-| Simple CNN 32 channels, dropout       | 0.5642 | 0.6822 | 0.7269 | 0.7450 | 0.7685 | **0.7735** | 0.7720 |
-| CNN double conv. 16 channels          | 0.5546 | 0.6971 | 0.7127 | **0.7157** | 0.6972 | 0.6875 | 0.6810 |
-| CNN double conv. 32 channels          | 0.5573 | 0.7211 | **0.7237** | 0.7203 | 0.7106 | 0.7166 | 0.7033 |
-| CNN double conv. 32 channels, dropout | 0.5524 | 0.6961 | 0.7512 | 0.7626 | 0.7726 | 0.7719 | **0.7728** |
+| Shallow fully connected               | 0.3399 | 0.3674 | 0.3296 | ***0.3859*** | 0.3628 | 0.3262 | 0.3820 |
+| Fully connected                       | 0.3655 | 0.4279 | 0.4443 | ***0.4547*** | 0.4374 | 0.4381 | 0.4515 |
+| Simple CNN 16 channels                | 0.5146 | 0.6468 | 0.6909 | 0.7009 | 0.7082 | ***0.7170*** | 0.7014 |
+| Simple CNN 32 channels                | 0.5937 | 0.6936 | 0.7199 | ***0.7304*** | 0.7102 | 0.7057 | 0.7042 |
+| Simple CNN 32 channels, dropout       | 0.5642 | 0.6822 | 0.7269 | 0.7450 | 0.7685 | ***0.7735*** | 0.7720 |
+| CNN double conv. 16 channels          | 0.5546 | 0.6971 | 0.7127 | ***0.7157*** | 0.6972 | 0.6875 | 0.6810 |
+| CNN double conv. 32 channels          | 0.5573 | 0.7211 | ***0.7237*** | 0.7203 | 0.7106 | 0.7166 | 0.7033 |
+| CNN double conv. 32 channels, dropout | 0.5524 | 0.6961 | 0.7512 | 0.7626 | 0.7726 | 0.7719 | ***0.7728*** |
 
 # Discussion
 Using hand-written features for classifying images is not always a viable possibility, as larger and more complicated images make creating such features much more complicated. Additionally, the results of networks using such features is not great. Implementing better features is possible, but also takes more time and this might not be worth the trade-off as both FCNN and CNNs perform better without requiring much attention. <br>
